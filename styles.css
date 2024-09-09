@@ -1,0 +1,146 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+.pintora-console-error {
+	position: relative;
+	height: 100%;
+	padding: 10px;
+	overflow: auto;
+	background-color: rgba(var(--color-red-rgb), 0.11);
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+}
+
+.pintora-console-error-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: var(--font-text);
+	font-size: 17px;
+	line-height: var(--line-height-normal);
+}
+
+.pintora-console-error-title > svg {
+	width: 19px;
+	height: 19px;
+	color: var(--background-primary);
+	fill: rgba(var(--color-red-rgb), 0.85);
+}
+
+.console-error-triangle {
+	font-size: 12px;
+}
+
+.modal-pintora {
+	padding: 0;
+	width: fit-content;
+	height: fit-content;
+	max-width: var(--modal-width);
+	max-height: var(--modal-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0);
+	border: unset;
+}
+
+.modal-pintora-closeBtn {
+	display: none;
+}
+
+.modal-pintora-content {
+	padding: 0;
+	width: fit-content;
+	height: fit-content;
+	max-width: var(--modal-width);
+	max-height: var(--modal-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	user-select: text;
+}
+
+.pintora-setting-textarea {
+	width: 100%;
+	height: 35vh;
+	resize: none;
+}
+
+.accordion {
+	border-radius: var(--radius-s);
+	width: 100%;
+}
+
+.accordion.active {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.accordion-header {
+	background-color: var(--background-primary-alt);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.accordion.active .accordion-header {
+	background-color: var(--titlebar-background);
+	border-radius: var(--radius-s);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.accordion-label {
+	flex-grow: 1;
+	text-align: center;
+	font-family: var(--font-text);
+	line-height: var(--line-height-normal);
+	display: inline-block;
+	overflow-wrap: anywhere;
+	overflow: hidden;
+	white-space: var(--nav-item-white-space);
+	text-overflow: ellipsis;
+}
+
+.accordion-arrow {
+	position: static;
+	padding: var(--size-2-2) var(--size-2-3);
+	left: var(--size-2-2);
+	inset-inline-end: var(--size-2-2);
+}
+
+.accordion .accordion-arrow>svg {
+	left: var(--size-2-2);
+	color: var(--nav-collapse-icon-color);
+	transform: rotate(0deg);
+	transition: transform 100ms ease-in-out;
+	stroke-width: var(--icon-stroke);
+}
+
+.accordion.active .accordion-arrow>svg {
+	color: var(--nav-collapse-icon-color);
+	transform: rotate(calc(var(--direction) * 180deg));
+	transition: transform 100ms ease-in-out;
+	stroke-width: var(--icon-stroke);
+}
+
+.accordion-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	height: 100%;
+	transition: max-height 10ms ease-in-out;
+	padding: 0;
+	cursor: default;
+	border-radius: var(--radius-s);
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

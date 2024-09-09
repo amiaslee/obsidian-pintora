@@ -1,0 +1,56 @@
+// Tiếng Việt
+export default {
+    // main
+    COPY_PATH: "Sao chép Đường dẫn",
+    REFRESH_DOCUMENT: "Làm mới Tài liệu",
+    COPY_SUCCESS_NOTICE: "Đã sao chép vào clipboard",
+  
+    // settings
+    DEFAULT_RENDERER_NAME: "Định dạng Hiển thị Mặc định",
+    DEFAULT_RENDERER_DESC: "Đặt định dạng hiển thị mặc định khi sử dụng thẻ pintora",
+    EXPORT_PATH_NAME: "Đường dẫn Xuất",
+    EXPORT_PATH_DESC: "Đường dẫn xuất sơ đồ dựa trên vị trí của thư mục hiện tại. Để trống để xuất vào thư mục hiện tại hoặc sử dụng 'attachments/' để xuất vào thư mục 'attachments' trong thư mục hiện tại.",
+    EXPORT_PATH_PLACEHOLDER: "Nhập đường dẫn lưu trữ sơ đồ",
+    THEME_NAME: "Giao diện",
+    THEME_DESC: "Chọn kiểu giao diện cho Pintora",
+    PRIMARY_COLOR_NAME: "Màu Chính",
+    PRIMARY_COLOR_DESC: "Đặt màu chính cho Pintora",
+    RESTORE_DEFAULTS: "Khôi phục Mặc định",
+    EDGE_TYPE_NAME: "Loại Đường cạnh",
+    EDGE_TYPE_DESC: "Loại đường cạnh",
+    EDGE_TYPE_POLYLINE: "Đường gãy khúc",
+    EDGE_TYPE_ORTHO: "Đường vuông góc",
+    EDGE_TYPE_CURVED: "Đường cong",
+    EDGE_COLOR_NAME: "Màu Đường cạnh",
+    EDGE_COLOR_DESC: "Màu đường cạnh",
+    THEME_VARIABLES_NAME: "Biến Chủ Đề",
+    THEME_VARIABLES_DESC: "Định nghĩa các biến tùy chỉnh cho chủ đề",
+    
+    // processor
+    COPY_SOURCE_CODE: "Sao chép Mã nguồn",
+    COPY_DIAGRAM: "Sao chép Sơ đồ",
+    COPY_PNG_BASE64: "Sao chép PNG (Base64)",
+    COPY_SVG_XML: "Sao chép SVG (XML)",
+    COPY_PNG_BLOB: "Sao chép PNG (Blob)",
+    COPY_DIAGRAM_NOTICE_ERR: "Đã xảy ra lỗi khi sao chép sơ đồ vào clipboard",
+    EXPORT_DIAGRAM: "Xuất biểu đồ",
+    EXPORT_MD_DIAGRAM: "Xuất biểu đồ .md",
+    EXPORT_PNG_DIAGRAM: "Xuất biểu đồ .png",
+    EXPORT_SVG_DIAGRAM: "Xuất biểu đồ .svg",
+    EXPORT_WEBP_DIAGRAM: "Xuất biểu đồ .webp",
+    GENERATE_LINK: "Tạo Liên kết",
+    GENERATE_MD_LINK: "Tạo liên kết .md",
+    SOURCE_PATH: "Đường dẫn Nguồn",
+    GENERATE_PNG_LINK: "Tạo liên kết .png",
+    GENERATE_SVG_LINK: "Tạo liên kết .svg",
+    GENERATE_WEBP_LINK: "Tạo liên kết .webp",
+    GENERATE_PNG_BASE64_LINK: "Tạo liên kết PNG (Base64)",
+    ATTACHMENT_LINK: "Liên kết Tệp đính kèm",
+    PINTORA_CODE_BACKUP_LINK: "Liên kết Sao lưu Mã Pintora:",
+    GENERATE_LINK_NOTICE: "Sơ đồ đã được xuất đến ",
+    GENERATE_PNG_BASE64_LINK_NOTICE: "Liên kết sơ đồ Base64 đã được tạo",
+    GENERATE_LINK_NOTICE_ERR: "Đã xảy ra lỗi khi xuất sơ đồ",
+    ENLARGED_VIEW: "Xem Lớn",
+    NOTHING_IN_HERE: "Không có gì ở đây."
+  }
+  

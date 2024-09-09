@@ -1,0 +1,56 @@
+// English
+export default {
+  // main
+  COPY_PATH: "Copy Path",
+  REFRESH_DOCUMENT: "Refresh Document",
+  COPY_SUCCESS_NOTICE: "Copied to clipboard",
+
+  // settings
+  DEFAULT_RENDERER_NAME: "Default Render Format",
+  DEFAULT_RENDERER_DESC: "Set the default rendering format when using the pintora tag",
+  EXPORT_PATH_NAME: "Export Path",
+  EXPORT_PATH_DESC: "The path for exporting the diagram is based on the current folder's location. Leave it empty to export to the current folder, or use 'attachments/' to export to the 'attachments' folder within the current folder.",
+  EXPORT_PATH_PLACEHOLDER: "Enter the storage path for the diagram",
+  THEME_NAME: "Theme",
+  THEME_DESC: "Select the theme style for Pintora",
+  PRIMARY_COLOR_NAME: "Primary Color",
+  PRIMARY_COLOR_DESC: "Set the primary color for Pintora",
+  RESTORE_DEFAULTS: "Restore Default",
+  EDGE_TYPE_NAME: "Edge Type",
+  EDGE_TYPE_DESC: "Edge splines type",
+  EDGE_TYPE_POLYLINE: "Polyline",
+  EDGE_TYPE_ORTHO: "Ortho",
+  EDGE_TYPE_CURVED: "Curved",
+  EDGE_COLOR_NAME: "Edge Color",
+  EDGE_COLOR_DESC: "Edge splines Color",
+  THEME_VARIABLES_NAME: "Theme Variables",
+  THEME_VARIABLES_DESC: "Defines custom variables for the theme",
+
+  // processor
+  COPY_SOURCE_CODE: "Copy Source",
+  COPY_DIAGRAM: "Copy Diagram", 
+  COPY_PNG_BASE64: "Copy PNG (Base64)",
+  COPY_SVG_XML: "Copy SVG (XML)",
+  COPY_PNG_BLOB: "Copy PNG (Blob)",
+  COPY_DIAGRAM_NOTICE_ERR: "An error occurred while copying diagram to clipboard",
+  EXPORT_DIAGRAM: "Export Diagram",
+  EXPORT_MD_DIAGRAM: "Export .md diagram",
+  EXPORT_PNG_DIAGRAM: "Export .png diagram",
+  EXPORT_SVG_DIAGRAM: "Export .svg diagram",
+  EXPORT_WEBP_DIAGRAM: "Export .webp diagram",  
+  GENERATE_LINK: "Generate Link",
+  GENERATE_MD_LINK: "Generate .md link",
+  SOURCE_PATH: "Source Path",
+  GENERATE_PNG_LINK: "Generate .png link",
+  GENERATE_SVG_LINK: "Generate .svg link",
+  GENERATE_WEBP_LINK: "Generate .webp link",
+  GENERATE_PNG_BASE64_LINK: "Generate PNG (Base64) link",
+  ATTACHMENT_LINK: "Attachment Link",
+  PINTORA_CODE_BACKUP_LINK: "Pintora Code Backup Link:",
+  GENERATE_LINK_NOTICE: "Diagram exported to ",
+  GENERATE_PNG_BASE64_LINK_NOTICE: "Base64 diagram link has been generated",
+  GENERATE_LINK_NOTICE_ERR: "An error occurred while exporting the diagram",
+  ENLARGED_VIEW: "Enlarged View",
+  NOTHING_IN_HERE: "Nothing in here."
+
+}

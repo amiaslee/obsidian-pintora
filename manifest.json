@@ -1,0 +1,10 @@
+{
+	"id": "pintora",
+	"name": "Pintora",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Generates diagrams using Pintora",
+	"author": "Amias Lee",
+	"authorUrl": "https://github.com/amiaslee",
+	"isDesktopOnly": false
+}

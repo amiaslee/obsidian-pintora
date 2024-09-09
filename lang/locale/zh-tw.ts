@@ -1,0 +1,56 @@
+// 繁體中文
+export default {
+    // main
+    COPY_PATH: "複製路徑",
+    REFRESH_DOCUMENT: "重新整理文件",
+    COPY_SUCCESS_NOTICE: "已複製到剪貼簿",
+  
+    // settings
+    DEFAULT_RENDERER_NAME: "預設渲染格式",
+    DEFAULT_RENDERER_DESC: "設定使用 pintora 標籤時的預設渲染格式",
+    EXPORT_PATH_NAME: "匯出路徑",
+    EXPORT_PATH_DESC: "匯出圖表的路徑基於當前文件夾位置。留空將匯出至當前文件夾，或使用 'attachments/' 匯出至當前文件夾內的 'attachments' 資料夾。",
+    EXPORT_PATH_PLACEHOLDER: "輸入圖表的存儲路徑",
+    THEME_NAME: "主題",
+    THEME_DESC: "選擇 Pintora 的主題樣式",
+    PRIMARY_COLOR_NAME: "主色調",
+    PRIMARY_COLOR_DESC: "設置 Pintora 的主色調",
+    RESTORE_DEFAULTS: "恢復預設",
+    EDGE_TYPE_NAME: "邊線類型",
+    EDGE_TYPE_DESC: "邊樣條線的類型",
+    EDGE_TYPE_POLYLINE: "折線",
+    EDGE_TYPE_ORTHO: "直角線",
+    EDGE_TYPE_CURVED: "曲線",
+    EDGE_COLOR_NAME: "邊線顏色",
+    EDGE_COLOR_DESC: "邊樣條線的顏色",
+    THEME_VARIABLES_NAME: "主題變量",
+    THEME_VARIABLES_DESC: "定義主題的自訂變量",
+
+    // processor
+    COPY_SOURCE_CODE: "複製原始碼",
+    COPY_DIAGRAM: "複製圖表", 
+    COPY_PNG_BASE64: "複製 PNG（Base64）",
+    COPY_SVG_XML: "複製 SVG（XML）",
+    COPY_PNG_BLOB: "複製 PNG（Blob）",
+    COPY_DIAGRAM_NOTICE_ERR: "複製圖表至剪貼簿時發生錯誤",
+    EXPORT_DIAGRAM: "導出圖表",
+    EXPORT_MD_DIAGRAM: "導出 .md 圖表",
+    EXPORT_PNG_DIAGRAM: "導出 .png 圖表",
+    EXPORT_SVG_DIAGRAM: "導出 .svg 圖表",
+    EXPORT_WEBP_DIAGRAM: "導出 .webp 圖表",
+    GENERATE_LINK: "生成連結",
+    GENERATE_MD_LINK: "生成 .md 連結",
+    SOURCE_PATH: "來源路徑",
+    GENERATE_PNG_LINK: "生成 .png 連結",
+    GENERATE_SVG_LINK: "生成 .svg 連結",
+    GENERATE_WEBP_LINK: "生成 .webp 連結",
+    GENERATE_PNG_BASE64_LINK: "生成 PNG（Base64）連結",
+    ATTACHMENT_LINK: "附件連結",
+    PINTORA_CODE_BACKUP_LINK: "Pintora 程式碼備份連結：",
+    GENERATE_LINK_NOTICE: "圖表已匯出至 ",
+    GENERATE_PNG_BASE64_LINK_NOTICE: "已生成 Base64 圖表連結",
+    GENERATE_LINK_NOTICE_ERR: "匯出圖表時發生錯誤",
+    ENLARGED_VIEW: "放大視圖",
+    NOTHING_IN_HERE: "這裡什麼都沒有。"
+  }
+  

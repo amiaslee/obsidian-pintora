@@ -1,0 +1,56 @@
+// 简体中文
+export default {
+  // main
+  COPY_PATH: "复制路径",
+  REFRESH_DOCUMENT: "刷新文档",
+  COPY_SUCCESS_NOTICE: "已复制到剪贴板",
+
+  // settings
+  DEFAULT_RENDERER_NAME: "默认渲染格式",
+  DEFAULT_RENDERER_DESC: "当使用 pintora 标签的时候，设定其默认的渲染方式。",
+  EXPORT_PATH_NAME: "导出路径",
+  EXPORT_PATH_DESC: "图表导出的路径，基于当前文件夹的位置，留空则为当前文件夹，'附件/' 则导出到当前文件夹下的附件文件夹。",
+  EXPORT_PATH_PLACEHOLDER: "请输入图表的导出路径",
+  THEME_NAME: "主题",
+  THEME_DESC: "选择Pintora的主题样式",
+  PRIMARY_COLOR_NAME: "主题颜色",
+  PRIMARY_COLOR_DESC: "设置Pintora的主题颜色",
+  RESTORE_DEFAULTS: "恢复默认",
+  EDGE_TYPE_NAME: "边线类型",
+  EDGE_TYPE_DESC: "边线的样式类型",
+  EDGE_TYPE_POLYLINE: "折线",
+  EDGE_TYPE_ORTHO: "直角线",
+  EDGE_TYPE_CURVED: "曲线",
+  EDGE_COLOR_NAME: "边线颜色",
+  EDGE_COLOR_DESC: "边线的颜色",
+  THEME_VARIABLES_NAME: "主题变量",
+  THEME_VARIABLES_DESC: "为主题定义自定义变量",
+
+  // processor
+  COPY_SOURCE_CODE: "复制源码",
+  COPY_DIAGRAM: "复制图表",
+  COPY_PNG_BASE64: "复制 PNG (Base64)",
+  COPY_SVG_XML: "复制 SVG (XML)",
+  COPY_PNG_BLOB: "复制 PNG (Blob)",
+  COPY_DIAGRAM_NOTICE_ERR: "复制图表到剪贴板时发生错误",
+  EXPORT_DIAGRAM: "导出图表",
+  EXPORT_MD_DIAGRAM: "导出 .md 图表",
+  EXPORT_PNG_DIAGRAM: "导出 .png 图表",
+  EXPORT_SVG_DIAGRAM: "导出 .svg 图表",
+  EXPORT_WEBP_DIAGRAM: "导出 .webp 图表",
+  GENERATE_LINK: "生成链接",
+  GENERATE_MD_LINK: "生成 .md 链接",
+  SOURCE_PATH: "源文件路径",
+  GENERATE_PNG_LINK: "生成 .png 链接",
+  GENERATE_SVG_LINK: "生成 .svg 链接",
+  GENERATE_WEBP_LINK: "生成 .webp 链接",
+  GENERATE_PNG_BASE64_LINK: "生成 PNG (Base64) 链接",
+  ATTACHMENT_LINK: "附件链接：",
+  PINTORA_CODE_BACKUP_LINK: "Pintora代码备份链接：",
+  GENERATE_LINK_NOTICE: "图表已导出到",
+  GENERATE_PNG_BASE64_LINK_NOTICE: "图表Base64链接已生成",
+  GENERATE_LINK_NOTICE_ERR: "导出图表时发生错误",
+  ENLARGED_VIEW: "放大查看",
+  NOTHING_IN_HERE: "空空如也。"
+  
+}

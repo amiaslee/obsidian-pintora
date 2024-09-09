@@ -1,0 +1,56 @@
+// français
+export default {
+    // main
+    COPY_PATH: "Copier le chemin",
+    REFRESH_DOCUMENT: "Rafraîchir le document",
+    COPY_SUCCESS_NOTICE: "Copié dans le presse-papiers",
+  
+    // settings
+    DEFAULT_RENDERER_NAME: "Format de rendu par défaut",
+    DEFAULT_RENDERER_DESC: "Définir le format de rendu par défaut lors de l'utilisation de la balise pintora",
+    EXPORT_PATH_NAME: "Chemin d'exportation",
+    EXPORT_PATH_DESC: "Le chemin d'exportation du diagramme est basé sur l'emplacement du dossier actuel. Laissez-le vide pour exporter dans le dossier actuel, ou utilisez 'attachments/' pour exporter dans le dossier 'attachments' dans le dossier actuel.",
+    EXPORT_PATH_PLACEHOLDER: "Entrez le chemin de stockage du diagramme",
+    THEME_NAME: "Thème",
+    THEME_DESC: "Sélectionnez le style de thème pour Pintora",
+    PRIMARY_COLOR_NAME: "Couleur principale",
+    PRIMARY_COLOR_DESC: "Définir la couleur principale pour Pintora",
+    RESTORE_DEFAULTS: "Restaurer les paramètres par défaut",
+    EDGE_TYPE_NAME: "Type de bord",
+    EDGE_TYPE_DESC: "Type de splines de bord",
+    EDGE_TYPE_POLYLINE: "Polyligne",
+    EDGE_TYPE_ORTHO: "Orthogonal",
+    EDGE_TYPE_CURVED: "Courbé",
+    EDGE_COLOR_NAME: "Couleur du bord",
+    EDGE_COLOR_DESC: "Couleur des splines de bord",
+    THEME_VARIABLES_NAME: "Variables du Thème",
+    THEME_VARIABLES_DESC: "Définit des variables personnalisées pour le thème",
+
+    // processor
+    COPY_SOURCE_CODE: "Copier le code source",
+    COPY_DIAGRAM: "Copier le diagramme",
+    COPY_PNG_BASE64: "Copier PNG (Base64)",
+    COPY_SVG_XML: "Copier SVG (XML)",
+    COPY_PNG_BLOB: "Copier PNG (Blob)",
+    COPY_DIAGRAM_NOTICE_ERR: "Une erreur est survenue lors de la copie du diagramme dans le presse-papiers",
+    EXPORT_DIAGRAM: "Exporter le diagramme",
+    EXPORT_MD_DIAGRAM: "Exporter le diagramme .md",
+    EXPORT_PNG_DIAGRAM: "Exporter le diagramme .png",
+    EXPORT_SVG_DIAGRAM: "Exporter le diagramme .svg",
+    EXPORT_WEBP_DIAGRAM: "Exporter le diagramme .webp",
+    GENERATE_LINK: "Générer le lien",
+    GENERATE_MD_LINK: "Générer le lien .md",
+    SOURCE_PATH: "Chemin source",
+    GENERATE_PNG_LINK: "Générer le lien .png",
+    GENERATE_SVG_LINK: "Générer le lien .svg",
+    GENERATE_WEBP_LINK: "Générer le lien .webp",
+    GENERATE_PNG_BASE64_LINK: "Générer le lien PNG (Base64)",
+    ATTACHMENT_LINK: "Lien de pièce jointe",
+    PINTORA_CODE_BACKUP_LINK: "Lien de sauvegarde du code Pintora :",
+    GENERATE_LINK_NOTICE: "Diagramme exporté vers ",
+    GENERATE_PNG_BASE64_LINK_NOTICE: "Lien du diagramme Base64 généré",
+    GENERATE_LINK_NOTICE_ERR: "Une erreur est survenue lors de l'exportation du diagramme",
+    ENLARGED_VIEW: "Vue agrandie",
+    NOTHING_IN_HERE: "Rien ici."
+  }
+  
