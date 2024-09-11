@@ -91,7 +91,7 @@ export class Processors implements Processor {
       if(pintoraParamJson) {
         pintoraTitle = pintoraParamJson.title;
         if(pintoraTitle){
-            el.closest('.accordion').querySelector('.accordion-label').innerHTML = pintoraTitle;
+            el.closest('.accordion').querySelector('.accordion-label').textContent = pintoraTitle;
         }
       } 
 
@@ -138,7 +138,7 @@ export class Processors implements Processor {
                             .setIcon('code')
                             .onClick(async () => {
                                 const svg = (await this.getDiagramData('svg',source, el, ctx));
-                                await navigator.clipboard.writeText(svg.outerHTML);
+                                await navigator.clipboard.writeText(this.getSvgXml(svg));
                                 new Notice(t("COPY_SUCCESS_NOTICE"));
                             });
                         })
@@ -204,7 +204,7 @@ export class Processors implements Processor {
                             await new Promise(resolve => requestAnimationFrame(resolve));
                             svg.removeAttribute("viewBox");
                             svg.removeAttribute("preserveAspectRatio", "xMidYMid meet");
-                            await this.exportDiagram(source, ctx, pintoraCodeBlock, pintoraTitle, false, null, svg.outerHTML, 'svg');
+                            await this.exportDiagram(source, ctx, pintoraCodeBlock, pintoraTitle, false, null, this.getSvgXml(svg), 'svg');
                         });
                     })
                     .addItem(item => {
@@ -260,7 +260,7 @@ export class Processors implements Processor {
                             await new Promise(resolve => requestAnimationFrame(resolve));
                             svg.removeAttribute("viewBox");
                             svg.removeAttribute("preserveAspectRatio", "xMidYMid meet");
-                            await this.exportDiagramLink(source, ctx, pintoraCodeBlock, pintoraTitle, codeblockInfo, false, null, svg.outerHTML, 'svg');
+                            await this.exportDiagramLink(source, ctx, pintoraCodeBlock, pintoraTitle, codeblockInfo, false, null, this.getSvgXml(svg), 'svg');
                         });
                     })
                     .addItem(item => {
@@ -313,9 +313,26 @@ export class Processors implements Processor {
     const errorDiv = document.createElement('div');
     const errorTitle = `<div class="pintora-console-error-title"><svg id="pintora-console-error-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>&nbsp;&nbsp;<div class="console-error-triangle">▶</div>&nbsp;Error</div>`;
     message = errorTitle + message;
-    errorDiv.innerHTML = message.replace(/\n/g,'<br>');
+    this.inner(message.replace(/\n/g,'<br>'),errorDiv);
     errorDiv.classList.add('pintora-console-error');
     el.appendChild(errorDiv);
+  }
+
+  inner(htmlString: string, parentElement: HTMLElement) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    while (parentElement.firstChild) {
+      parentElement.removeChild(parentElement.firstChild);
+    }
+    Array.from(doc.body.childNodes).forEach(node => {
+      parentElement.appendChild(node);
+    });
+  }
+  
+  getSvgXml(svg:HTMLElement){
+    const serializer = new XMLSerializer();
+    const svgString = serializer.serializeToString(svg);
+    return svgString;
   }
 
   async getDiagramData(type: string, source: string, el: HTMLElement, ctx: MarkdownPostProcessorContext) {
@@ -378,13 +395,6 @@ export class Processors implements Processor {
     const newContent = codeblockInfo?.text.replace(pintoraCodeBlock,attachmentLink);
     view.editor.setValue(newContent);
     this.plugin.refreshEditor();
-  }
-
-  canvasToIMG(canvas: HTMLCanvasElement) {
-    const dataURL = canvas.toDataURL();
-    const img = new Image();
-    img.src = dataURL;
-    return img;
   }
 
   scaleElementToFitParent(el: HTMLElement) {
@@ -478,7 +488,7 @@ scaleElement(parentEl: HTMLElement, childEl: HTMLElement) {
     if(wrapOptions.overlay){
         const overlayEl = document.createElement('div');
         overlayEl.classList.add(wrapOptions.overlay);
-        if(wrapOptions.progress){ overlayEl.innerHTML = wrapOptions.progress; }
+        if(wrapOptions.progress){ this.inner(wrapOptions.progress,overlayEl); }
         wrap.appendChild(overlayEl);
     }
     if(wrapOptions.removeElStyle){
