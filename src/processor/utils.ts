@@ -183,21 +183,11 @@ export class Utility {
     return wrap;
   }
 
-  parsePintoraParam(param: string | undefined): Record<string, null> | null {
-    if (!param) return null;
+  parsePintoraParam(param: string | undefined): Record<string, null> {
+    if (!param) { return {}; }
     const repairedParam = jsonrepair(param);
     try {
       return JSON.parse(repairedParam);
-    } catch {
-      return null;
-    }
-  }
-
-  parseThemeVariables(input: string | undefined): Record<string, null> {
-    if (!input) return {};
-    const repairedInput = jsonrepair(input);
-    try {
-      return JSON.parse(repairedInput);
     } catch {
       return {};
     }
