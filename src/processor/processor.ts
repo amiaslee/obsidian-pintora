@@ -42,7 +42,7 @@ export class Processors implements Processor {
     
       if(!source){ utility.errorConsole(el,`Input content is empty.\n`); }
 
-      const themeVariables = utility.parseThemeVariables(this.plugin.settings.themeVariables);
+      const themeVariables = utility.parsePintoraParam(this.plugin.settings.themeVariables);
       const commonConfigs = {
         edgeType: this.plugin.settings.edgeType,
         useMaxWidth: true,
