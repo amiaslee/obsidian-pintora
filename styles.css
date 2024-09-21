@@ -25,7 +25,16 @@ If your plugin does not need CSS, delete this file.
 	line-height: var(--line-height-normal);
 }
 
-.pintora-console-error-title > svg {
+.pintora-console-error-title-svg {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: var(--font-text);
+	font-size: 17px;
+	line-height: var(--line-height-normal);
+}
+
+.pintora-console-error-title-svg > svg {
 	width: 19px;
 	height: 19px;
 	color: var(--background-primary);
@@ -117,19 +126,23 @@ If your plugin does not need CSS, delete this file.
 	inset-inline-end: var(--size-2-2);
 }
 
-.accordion .accordion-arrow>svg {
+.accordion .accordion-arrow > svg {
+	height: 20px;
+	width: 22px;
 	left: var(--size-2-2);
 	color: var(--nav-collapse-icon-color);
 	transform: rotate(0deg);
 	transition: transform 100ms ease-in-out;
-	stroke-width: var(--icon-stroke);
+	stroke-width: calc(var(--icon-stroke) * 1.25);
 }
 
-.accordion.active .accordion-arrow>svg {
+.accordion.active .accordion-arrow > svg {
+	height: 20px;
+	width: 22px;
 	color: var(--nav-collapse-icon-color);
 	transform: rotate(calc(var(--direction) * 180deg));
 	transition: transform 100ms ease-in-out;
-	stroke-width: var(--icon-stroke);
+	stroke-width: calc(var(--icon-stroke) * 1.25);
 }
 
 .accordion-content {

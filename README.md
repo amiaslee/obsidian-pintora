@@ -1,4 +1,4 @@
-<h2><p align='center'>Obsidian-Pintora</p></h2>
+<h2><p align='center'>Pintora for Obsidian</p></h2>
 
 <p align='center'>
   <a href="./README.md">English</a>

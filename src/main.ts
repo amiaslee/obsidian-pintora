@@ -1,5 +1,5 @@
 import { Plugin, MarkdownView, Notice } from 'obsidian';
-import { Processors } from "./processor";
+import { Processors } from "./processor/processor";
 import { DEFAULT_SETTINGS, PintoraPluginSettings, PintoraSettingsTab } from "./settings"
 import { t } from "lang/helpers"
 

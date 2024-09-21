@@ -88,31 +88,6 @@ export class PintoraSettingsTab extends PluginSettingTab {
 					this.plugin.refreshEditor();
 			}));
 
-		/*
-		const edgeColorBtn = new Setting(containerEl)
-			.setName(t("EDGE_COLOR_NAME"))
-			.setDesc(t("EDGE_COLOR_DESC"))
-			.addExtraButton(color => color
-				.setIcon('rotate-ccw')
-				.setTooltip(t("RESTORE_DEFAULTS"))
-				.onClick(async () => {
-					this.plugin.settings.edgeColor = DEFAULT_SETTINGS.edgeColor;
-					this.plugin.saveSettings();
-					const colorPicker = edgeColorBtn.settingEl.querySelector('input');
-					if(colorPicker){ colorPicker.value = this.plugin.settings.edgeColor; }
-					this.plugin.refreshEditor();
-			}))
-			.addColorPicker(color => {
-				color
-				.setValue(this.plugin.settings.edgeColor)
-				.onChange(async (value) => {
-					this.plugin.settings.edgeColor = value;
-					this.plugin.saveSettings();
-					this.plugin.refreshEditor();
-				})
-			});
-			*/
-
 			new Setting(containerEl)
 			.setName(t("THEME_VARIABLES_NAME"))
 			.setDesc(t("THEME_VARIABLES_DESC"))
