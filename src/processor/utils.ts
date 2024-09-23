@@ -31,7 +31,15 @@ export class Utility {
 
   addPintoraIcon(parentEl: HTMLElement, iconID: string, svgContent: string, viewBox: string = `0 0 24 24`){
     if(!parentEl){ return; }
-    addIcon(iconID, svgContent);
+    const globalAny = globalThis as any;
+    if (!globalAny.addedIcons) {
+      globalAny.addedIcons = new Set<string>();
+    }
+    const addedIcons = globalAny.addedIcons;
+    if (!addedIcons.has(iconID)) {
+      addIcon(iconID, svgContent);
+      addedIcons.add(iconID);
+    }
     setIcon(parentEl,iconID);
     const svg = parentEl.querySelector('svg');
     if(svg){ svg.setAttribute("viewBox", viewBox); }
